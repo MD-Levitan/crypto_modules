@@ -1,7 +1,6 @@
 version = 1.0
 
 obj-m += belt.o
-obj-m += cfb.o
 
 .PHONY: all modules clean install uninstall
 
@@ -23,6 +22,6 @@ install:
 	dkms install -m belt-kernel -v $(version)
 
 uninstall:
-	modprobe -r belt magma
+	modprobe -r belt
 	dkms remove belt-kernel/$(version) --all
 	rm -rf /usr/src/belt-kernel-$(version)
