@@ -48,11 +48,11 @@
 #define BELT_KS_LENGTH          8
 
 #define BELT_KEY_SIZE	        32
-#define BELT_MIN_KEY_SIZE	16
-#define BELT_MAX_KEY_SIZE	32
-#define BELT_KEYSIZE_128 	16
-#define BELT_KEYSIZE_192	24
-#define BELT_KEYSIZE_256	32
+#define BELT_MIN_KEY_SIZE	    16
+#define BELT_MAX_KEY_SIZE	    32
+#define BELT_KEYSIZE_128 	    16
+#define BELT_KEYSIZE_192	    24
+#define BELT_KEYSIZE_256	    32
 #define BELT_BLOCK_SIZE         16
 
 struct crypto_belt_ctx {
