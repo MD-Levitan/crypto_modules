@@ -22,6 +22,6 @@ install:
 	dkms install -m hbelt-kernel -v $(version)
 
 uninstall:
-	modprobe -r hbelt magma
+	modprobe -r hbelt
 	dkms remove hbelt-kernel/$(version) --all
 	rm -rf /usr/src/hbelt-kernel-$(version)
